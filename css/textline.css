@@ -1,0 +1,109 @@
+.wapper{
+    /* background-color: red; */
+    margin: 50px auto;
+    max-width: 1080px;
+    padding: 0 20px;
+    position: relative;
+}
+.wapper .row{
+    display: flex;
+    justify-content: flex-start;
+}
+.wapper .row-1{
+    justify-content: flex-start;
+}
+.wapper .row-2{
+    justify-content: flex-end;
+}
+.wapper .row .section1{
+    width: calc(50% - 40px);
+    background-color: #fff;
+    border-radius: 7px;
+    /* padding: 15px; */
+    position: relative;
+}
+.wapper .row .section1::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: #F8EFBA;;
+    top: 28px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+.row-1 .section1::before{
+    right: -7px;
+}
+.row-2 .section1::before{
+    left:-7px;
+}
+.wapper .center-line{
+    position: absolute;
+    height: 100%;
+    width: 5px;
+    background-color: #fff;
+    left: 50%;
+    /* top: 20px; */
+    transform: translateX(-50%);
+}
+.header12{
+    width: 100%;
+    height: 70px;
+    background-color: #F8EFBA;
+    font-family: sans-serif;
+    line-height: 70px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #222;
+    font-size: 18px !important;
+    
+}
+
+.head{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom:30px;
+    font-size: 25px;
+}
+.wapper .row .section1 p
+{
+    margin: 10px;
+    line-height: 1.5;
+    color: #545;
+    width: 100% !important;
+}
+.wapper .row .section1 button{
+    width: 150px;
+    height: 40px;
+    background-color: transparent;
+    border: 2px solid #22a6b3;
+    margin: 20px;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 7px #22a6b3;
+    font-weight: bold;
+}
+.row .section1 span{
+    position: absolute;
+    background-color: #fff;
+    width:40px ;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+    color: #125358;
+    top: 13px;
+}
+.row-1 .section1 span{
+    right: -60px;
+}
+.row-2 .section1 span{
+    left: -60px;
+}
+.sollem{
+    background-color: #eee;
+    width: 100%;
+}
